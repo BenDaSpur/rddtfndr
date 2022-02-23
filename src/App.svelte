@@ -107,6 +107,16 @@
                                                 </a>
                                             </Col>
                                         </Row>
+                                        <Row>
+                                            <Col>
+                                                {#if post.data.num_comments > 0}
+                                                    {post.data.num_comments} comments
+                                                {:else}
+                                                    No comments
+                                                    <!-- else content here -->
+                                                {/if}
+                                            </Col>
+                                        </Row>
                                     </Col>
                                 </TabPane>
                             {/each}
